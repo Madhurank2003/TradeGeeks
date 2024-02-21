@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+body {
+    display: flex;
+    padding-top: 40px;
+    /* Height of the navbar */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: black;
+}
+
+#Signdiv {
+    padding: 10px;
+    background: #0bf40a;
+    color: black;
+    /* Change text color to white */
+    width: 200px;
+    margin-top: 0px;
+    height: 50px;
+    font-weight: 600;
+    border-radius: 3px;
+    font-size: 1.2em;
+    /* Decrease font size slightly */
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+    /* Add flex display to center text vertically */
+    justify-content: center;
+    /* Add flex display to center text horizontally */
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+    /* Add transition for background-color, color, and transform */
+}
+
+#Signdiv:hover {
+    background: #0c0;
+    /* Change background color on hover */
+    color: black;
+    /* Change text color on hover */
+    font-size: 1.3em;
+    /* Increase font size on hover */
+    transform: scale(1.1);
+    /* Enlarge the box on hover */
+}
+
+#Signdiv:active {
+    background: #090;
+    /* Change background color when clicked */
+    transform: scale(0.9);
+    /* Reduce the size of the box when clicked */
+}
+
+.contaier {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#typingText {
+    margin-top: 0%;
+    font-family: 'Exo 2', sans-serif;
+    background-color: black;
+    font-weight: bold;
+    font-size: 40px;
+    color: green;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+section {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+section::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#000, #0f0, #000);
+    animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(100%);
+    }
+}
+
+section span {
+    position: relative;
+    display: block;
+    width: calc(6.25vw - 2px);
+    height: calc(6.25vw - 2px);
+    background: #181818;
+    z-index: 2;
+    transition: 1.5s;
+}
+
+section span:hover {
+    background: #0f0;
+    transition: 0s;
+}
+
+section .signin {
+    position: absolute;
+    width: 400px;
+    background: #222;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 9);
+}
+
+section .signin .content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+}
+
+section .signin .content h2 {
+    font-size: 1.5em;
+    color: #0f0;
+    padding-bottom: 0px;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    z-index: 1000;
+}
+
+nav a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    position: relative;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: green;
+    transition: width 0.3s ease-in-out;
+    z-index: -1;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+nav a:hover {
+    color: #0f0;
+    /* Change text color on hover */
+}
+
+/* Your existing CSS styles */
+#typingText {
+    margin: 0 auto;
+    /* Set top and bottom margin to 0 and auto for left and right margin */
+    font-family: 'Exo 2', sans-serif;
+    background-color: #222222;
+    /* Set background color to #222222 */
+    font-weight: bold;
+    display: flex;
+    /* Use flexbox */
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+    font-size: 40px;
+    color: #0AEF09;
+    /* Set text color to #0AEF09 */
+    overflow: hidden;
+    /* Ensure overflow is hidden to hide overflowed text */
+    white-space: nowrap;
+    /* Prevent text wrapping */
+    width: 100%;
+    /* Set width to 100% */
+}

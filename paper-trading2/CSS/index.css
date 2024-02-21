@@ -1,0 +1,121 @@
+body {
+    background-color: #181818;
+    /* Updated background color for the entire body */
+}
+
+.logout-btn {
+    background-color: #4285f4;
+    /* Choose a color that matches your design */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.logout-link {
+    display: none;
+    /* Hide the blue link */
+}
+
+.container {
+    max-width: 500px;
+    /* Adjusted size of the container */
+    padding: 20px;
+    color: white;
+    background-color: #222;
+    /* Semi-transparent white background */
+    backdrop-filter: blurwhite(10px);
+    /* Background blur effect */
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    /* Center horizontally */
+    margin-top: 40vh;
+    /* Adjusted to center vertically */
+    transform: translateY(-50%);
+    /* Adjusted to center vertically */
+    box-shadow: 0 8px 32px 0 rgba(236, 234, 234, 0.15);
+    /* Glassmorphic shadow effect with silver color */
+}
+
+.option {
+    background-color: #42e948;
+    /* Dark green color for buttons */
+    color: #0BF40A;
+    /* Green color for text inside buttons */
+    text-align: center;
+    padding: 10px 20px;
+    /* Adjusted padding */
+    border-radius: 5px;
+    /* Adjusted border radius */
+    transition: transform 0.3s ease, color 0.3s ease, background-color 0.3s ease;
+    /* Transition for scale, color change, and background-color change */
+    width: 100%;
+    max-width: 200px;
+    /* Limit width for smaller screens */
+    cursor: pointer;
+    border: none;
+    /* Remove default button border */
+    outline: none;
+    /* Remove default button outline */
+    margin-top: 10px;
+    /* Adjusted margin */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    /* Adding shadow effect to buttons */
+}
+
+.option:hover {
+    color: black;
+    background-color: #0BF40A;
+    /* Green color when hovered */
+    transform: scale(1.1);
+    /* Scale effect on hover */
+}
+
+.option:active {
+    background-color: #003300;
+    /* Darker green color when clicked */
+    color: #27FF61;
+    /* Change text color to light green when clicked */
+}
+
+.option h2 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    /* Add spacing below heading */
+}
+
+.option a {
+    color: #0BF40A;
+    /* Green color for text inside buttons */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Additional styles to align text */
+.container p {
+    margin: 0;
+    /* Remove default margins */
+    text-align: center;
+    /* Center-align text */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+#home {
+    margin-top: 5%;
+    color: #0BF40A;
+    text-align: center;
+    font-size: 3em;
+}

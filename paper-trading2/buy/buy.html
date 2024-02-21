@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paper Trading - Buy Stocks</title>
+    <link rel="stylesheet" href="../CSS/buy.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Buy Stocks</h2>
+        <div id="stocks-container"></div>
+        <div id="buy-modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <p align-items="center">Enter the amount of stocks to buy:</p>
+                <input type="number" id="amountInput" min="1" required>
+                <button onclick="buyStock()">Buy</button>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paper Trading - Sell Stocks</title>
+    <link rel="stylesheet" href="../CSS/sell.css">
+</head>
+
+<body>`
+    <div class="container">
+        <h2>Sell Stocks</h2>
+        <div id="portfolio-container"></div>
+        <div id="sell-modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <p>Enter the quantity of stocks to sell:</p>
+                <input type="number" id="quantityInput" min="1" required>
+                <button onclick="sellStock()">Sell</button>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

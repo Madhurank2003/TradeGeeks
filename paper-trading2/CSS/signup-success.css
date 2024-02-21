@@ -1,0 +1,42 @@
+body {
+    background-color: #181818;
+    font-family: Arial, sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Make the body take up the full height of the viewport */
+}
+
+h1 {
+    color: #0BF40A;
+}
+
+p {
+    font-size: 20px; /* Increase font size */
+}
+
+button {
+    width: 150px;
+    background-color: #42e948;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Added for hovering effect */
+}
+
+button:hover {
+    background-color: #0BF40A; /* Change button color on hover */
+    transform: scale(1.15); /* Scale button on hover */
+}
+
+button:active {
+    background-color: #003300; /* Darker green color when clicked */
+    color: #27FF61; /* Change text color to light green when clicked */
+}

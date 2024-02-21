@@ -1,0 +1,99 @@
+body {
+    background-color: #181818;
+    font-family: Arial, sans-serif;
+    color: white; /* Make all text white */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(232, 228, 228, 0.15);
+    border-radius: 8px;
+    color: white; /* Make text inside container white */
+}
+
+h2 {
+    color: white; /* Make h2 text white */
+}
+
+#stocks-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.stock-card {
+    border: 1px solid #0BF40A; /* Add green border */
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.buy-button {
+    background-color: #4CAF50;
+    color: 0BF40A;
+    color: white;
+    align-items: center;
+    border: none;
+    padding: 5px 20px; /* Make buttons wider */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 100px;
+    height: 40px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: transform 0.3s ease, color 0.3s ease, background-color 0.3s ease; /* Transition for scale, color change, and background-color change */
+}
+
+.buy-button:hover {
+    background-color: #0BF40A; /* Change button color on hover */
+    color: black; /* Change text color to white on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow on hover */
+    transform: scale(1.1); /* Scale button on hover */
+}
+
+.buy-button:active {
+    background-color: #003300; /* Darker green color when clicked */
+    color: #27FF61; /* Change text color to light green when clicked */
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #181818; /* Change modal background color */
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #0BF40A; /* Change border color */
+    width: 60%;
+    border-radius: 8px;
+    position: relative;
+    color: white; /* Make modal text white */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+}
