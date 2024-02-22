@@ -17,7 +17,7 @@ if (isset($_SESSION['user_id'])) {
     $sell_quantity = $_POST['sell_quantity'] ?? 0;
     $sell_price = $_POST['sell_price'] ?? 0;
 
-    // Validate inputs (adjust as needed)
+    // Validate inputs
     if (empty($stock_symbol) || $sell_quantity <= 0 || $sell_price <= 0) {
         echo json_encode(['success' => false, 'message' => 'Invalid input']);
         exit;
@@ -30,7 +30,7 @@ if (isset($_SESSION['user_id'])) {
     $sql_sell = "INSERT INTO transactions (user_id, stock_symbol, type, shares, price,created_at) VALUES ('$user_id', '$stock_symbol', 'sell', '$sell_quantity', '$sell_price',CURRENT_TIMESTAMP)";
     $result_sell = $db->query($sql_sell);
 
-    // Update the wallet balance only is transaction successfull
+    // Update the wallet balance only if transaction successfull
     if ($result_sell) {
         $sql_update_wallet = "UPDATE users SET funds = funds + '$total_amount' WHERE id = '$user_id'";
         $result_update_wallet = $db->query($sql_update_wallet);
